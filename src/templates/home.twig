@@ -1,0 +1,13 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+  <h1>
+    Hello World
+  </h1>
+
+  <turbo-frame id="frame_msg">
+    <form action="/_turbo/frame_msg">
+      <button>Click me</button>
+    </form>
+  </turbo-frame>
+{% endblock %}

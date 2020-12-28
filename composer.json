@@ -1,0 +1,13 @@
+{
+    "name": "hdahlheim/siler_hotwire_demo",
+    "require": {
+        "leocavalcante/siler": "^1.7",
+        "twig/twig": "^3.1"
+    },
+    "authors": [
+        {
+            "name": "Henning Dahlheim",
+            "email": "hactar@cyberkraft.ch"
+        }
+    ]
+}
