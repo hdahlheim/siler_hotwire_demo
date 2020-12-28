@@ -1,0 +1,22 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+  <h1>Search</h1>
+
+  <form action="/search" data-turbo-frame="result">
+    <input type="text" name="search" id="search">
+    <button type="submit">Search</button>
+  </form>
+
+  <turbo-frame id="result">
+    <ul>
+    {% if results %}
+      {% for result in results %}
+      <li>
+        {{ result }}
+      </li>
+      {% endfor %}
+    {% endif %}
+    </ul>
+  </turbo-frame>
+{% endblock %}
